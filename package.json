@@ -1,11 +1,13 @@
 {
-  "name": "zan-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "revenge-ui",
+  "version": "0.0.1",
+  "author": "zjh1998",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.js"
   },
+  "main": "lib/index.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -21,5 +23,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "license": "MIT"
 }
